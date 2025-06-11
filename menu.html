@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MITS Internship Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sticky Banner -->
+  <div id="stickyBanner">
+    <i class="fas fa-rocket"></i> Apply for Internship
+    <button class="apply-btn">Apply Now</button>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+    <div class="sidebar-header">
+      <img src="logo.png" alt="MITS Logo" class="logo">
+      <h3>MITS Portal</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#internships"><i class="fas fa-briefcase"></i> Internships</a>
+      <a href="#offers"><i class="fas fa-file-alt"></i> Offer Letter</a>
+      <a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a>
+      <a href="#team"><i class="fas fa-users"></i> Team</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </div>
+
+  <!-- Header with Menu Button -->
+  <header>
+    <button class="menu-btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+    <h1><i class="fas fa-graduation-cap"></i> MITS Internship Dashboard</h1>
+    <div class="header-actions">
+      <button class="notification-btn"><i class="fas fa-bell"></i></button>
+      <button class="profile-btn"><i class="fas fa-user-circle"></i></button>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <section id="internships" class="content-section">
+      <div class="section-header">
+        <h2><i class="fas fa-briefcase"></i> Internships</h2>
+        <p class="section-description">Explore exciting internship opportunities</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Software Development</h3>
+          <p>Full-stack development internship</p>
+          <button class="card-btn">Learn More</button>
+        </div>
+        <div class="card">
+          <h3>Data Science</h3>
+          <p>Data analysis and machine learning</p>
+          <button class="card-btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" class="content-section">
+      <div class="section-header">
+        <h2><i class="fas fa-file-alt"></i> Offer Letters</h2>
+        <p class="section-description">View and manage your offer letters</p>
+      </div>
+      <div class="offer-list">
+        <!-- Offer items will be dynamically populated -->
+      </div>
+    </section>
+
+    <section id="certificates" class="content-section">
+      <div class="section-header">
+        <h2><i class="fas fa-certificate"></i> Certificates</h2>
+        <p class="section-description">Your achievement certificates</p>
+      </div>
+      <div class="certificate-grid">
+        <!-- Certificate items will be dynamically populated -->
+      </div>
+    </section>
+
+    <section id="team" class="content-section">
+      <div class="section-header">
+        <h2><i class="fas fa-users"></i> Team</h2>
+        <p class="section-description">Meet our dedicated team</p>
+      </div>
+      <div class="team-grid">
+        <!-- Team member cards will be dynamically populated -->
+      </div>
+    </section>
+
+    <section id="contact" class="content-section">
+      <div class="section-header">
+        <h2><i class="fas fa-envelope"></i> Contact</h2>
+        <p class="section-description">Get in touch with us</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

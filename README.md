@@ -78,3 +78,5 @@ project-folder/
 
 This project is for educational/demo purposes only.
 
+OUTPUT:
+![Image](https://github.com/user-attachments/assets/fe5de8ab-889a-4776-97d7-cc6178735d2c)
